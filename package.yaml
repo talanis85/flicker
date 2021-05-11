@@ -15,7 +15,7 @@ description:         Please see the README on GitHub at <https://github.com/tala
 
 dependencies:
 - base >= 4.7 && < 5
-- disguise-gtk
+- disguise-gtk >= 0.1 && < 0.2
 
 executables:
   flicker:
@@ -25,8 +25,7 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    dependencies:
-    - flicker
+    dependencies: []
 
 tests:
   flicker-test:
@@ -36,5 +35,4 @@ tests:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    dependencies:
-    - flicker
+    dependencies: []
